@@ -1,154 +1,728 @@
+/* =====================================
+   CONFIGURACIÓN GENERAL
+===================================== */
+
 html{
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-    background-color: #121212;
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(to bottom,#0b0b0b,#1d1d1d,#0b0b0b);
+    color:white;
 }
 
+/* =====================================
+   MENÚ
+===================================== */
+
 nav{
-    background-color: #000;
-    padding: 15px;
-    text-align: center;
+    background:#000;
+    padding:15px;
+    text-align:center;
 }
 
 nav a{
-    color: white;
-    text-decoration: none;
-    margin: 15px;
-    font-weight: bold;
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+    transition:.3s;
 }
 
 nav a:hover{
-    color: gold;
+    color:gold;
 }
 
+/* =====================================
+   TÍTULOS
+===================================== */
 
 h1{
-    text-align: center;
-    margin-top: 20px;
+    text-align:center;
+    margin-top:20px;
 }
 
 #title{
-    color: red;
+    color:red;
 }
 
-li{
-    color: rgb(139, 97, 47);
+h2{
+    color:gold;
+    text-align:center;
+    text-shadow:2px 2px 8px black;
 }
+
+/* =====================================
+   SECCIONES
+===================================== */
 
 section{
-    padding: 20px;
-    margin: 20px;
+    padding:20px;
+    margin:20px;
 }
+
+/* =====================================
+   CONTADOR
+===================================== */
 
 #contador-final{
-    background-color: #1e1e1e;
-    border: 2px solid gold;
-    border-radius: 10px;
-    text-align: center;
-    padding: 15px;
-    margin: 20px;
+    background:#1e1e1e;
+    border:2px solid gold;
+    border-radius:10px;
+    text-align:center;
 }
 
-img{
-    display: block;
-    margin: auto;
-    border-radius: 10px;
+#contador{
+    color:gold;
+    font-size:32px;
+    font-weight:bold;
 }
 
+/* =====================================
+   IMÁGENES Y MAPA
+===================================== */
+
+img,
 iframe{
-    display: block;
-    margin: auto;
-    border-radius: 10px;
+    display:block;
+    margin:auto;
+    border-radius:10px;
 }
 
-#live-scores{
-    margin-top: 30px;
-}
-
-#equipos{
-    text-align: center;
-}
-
-#equipos h2{
-    color: gold;
-    margin-bottom: 20px;
-}
-
-#equipos h3{
-    margin-top: 30px;
-    color: white;
-}
-
-table{
-    width: 90%;
-    margin: auto;
-    margin-bottom: 30px;
-    border-collapse: collapse;
-    background-color: #111;
-}
-
-th{
-    background-color: gold;
-    color: black;
-    padding: 12px;
-    font-size: 18px;
-}
-
-td{
-    padding: 10px;
-}
-
-th,
-td{
-    border: 1px solid white;
-    text-align: center;
-}
-
-tr:hover{
-    background-color: #2c2c2c;
-}
+/* =====================================
+   BOTONES
+===================================== */
 
 .btn{
-    background-color: gold;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
+    background:gold;
+    color:black;
+    border:none;
+    padding:10px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
 }
 
 .btn:hover{
-    background-color: white;
+    background:white;
+}
+
+/* =====================================
+   AUDIO Y VIDEO
+===================================== */
+
+.audio-section,
+.video-section{
+    text-align:center;
 }
 
 .audio-section{
-    text-align: center;
-    margin-bottom: 50px;
+    margin-bottom:50px;
 }
 
 .video-section{
-    text-align: center;
-    margin-top: 30px;
+    margin-top:30px;
 }
 
+/* =====================================
+   CONTACTO
+===================================== */
+
 #contacto{
-    background-color: #1e1e1e;
-    padding: 20px;
-    text-align: center;
-    border-top: 2px solid gold;
+    background:#1e1e1e;
+    border-top:2px solid gold;
+    text-align:center;
 }
-#contador{
-    font-size: 32px;
-    font-weight: bold;
-    color: gold;
-    margin-top: 15px;
+/* =====================================
+   proximo partido
+===================================== */
+#proximo-partido{
+
+margin:40px auto;
+
+padding:30px;
+
+width:85%;
+
+background:#111;
+
+border:3px solid gold;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 0 20px rgba(255,215,0,.35);
+
 }
-#contador-final h2{
-    color: white;
-    margin-bottom: 15px;
+
+.final-card{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:20px;
+
+}
+
+.equipo-final{
+
+font-size:30px;
+
+font-weight:bold;
+
+background:#202020;
+
+padding:15px 35px;
+
+border-radius:15px;
+
+transition:.3s;
+
+}
+
+.equipo-final:hover{
+
+transform:scale(1.08);
+
+background:gold;
+
+color:black;
+
+}
+
+.vs{
+
+font-size:38px;
+
+font-weight:bold;
+
+color:gold;
+
+}
+
+.info-final{
+
+font-size:18px;
+
+line-height:1.8;
+
+}
+
+/* =====================================
+   CUADRO ELIMINATORIO
+===================================== */
+
+#clasificacion{
+
+    background:#151515;
+
+    border:3px solid gold;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 0 25px rgba(255,215,0,.3);
+
+}
+
+.bracket{
+    display:flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+    gap:70px;
+    overflow-x:auto;
+    padding:30px;
+}
+
+.ronda{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    min-width:230px;
+    position:relative;
+}
+.grupo{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+    margin-bottom:25px;
+}
+.ronda h3{
+    text-align:center;
+    color:gold;
+    margin-bottom:25px;
+    font-size:22px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.partido{
+    background:#202020;
+    border-left:4px solid gold;
+    border-radius:12px;
+    padding:10px;
+    transition:.3s;
+}
+.partido:hover{
+    transform:translateX(8px);
+    box-shadow:0 0 12px rgba(255,215,0,.5);
+}
+
+.partido::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-60px;
+
+    top:50%;
+
+    width:60px;
+
+    height:3px;
+
+    background:gold;
+
+}
+.ronda:not(:last-child) .partido:nth-child(odd)::before{
+
+    content:"";
+
+    position:absolute;
+
+    right:-45px;
+
+    top:50%;
+
+    width:2px;
+
+    height:90px;
+
+    background:gold;
+
+}
+
+.partido:hover{
+
+    transform:translateX(8px);
+
+}
+
+.equipo{
+    background:#2d2d2d;
+    padding:10px;
+    margin:6px 0;
+    border-radius:8px;
+    text-align:center;
+    transition:.3s;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.equipo:hover{
+
+    transform:scale(1.08);
+
+    background:gold;
+
+    color:black;
+
+    transform:scale(1.05);
+
+}
+
+.ganador{
+
+    background:gold;
+
+    color:black;
+
+    font-weight:bold;
+
+    animation:brillo 2s infinite;
+
+}
+/* =====================================
+   Top Goleadores
+===================================== */
+#goleadores{
+
+width:85%;
+
+margin:50px auto;
+
+background:#111;
+
+padding:30px;
+
+border-radius:20px;
+
+border:3px solid gold;
+
+box-shadow:0 0 20px rgba(255,215,0,.35);
+
+}
+
+#goleadores table{
+
+width:100%;
+
+border-collapse:collapse;
+
+}
+
+#goleadores th{
+
+background:gold;
+
+color:black;
+
+padding:15px;
+
+font-size:18px;
+
+}
+
+#goleadores td{
+
+padding:15px;
+
+text-align:center;
+
+border-bottom:1px solid #444;
+
+}
+
+#goleadores tr:hover{
+
+background:#222;
+
+transition:.3s;
+
+}
+
+
+/* =====================================
+   TARJETAS DE INFORMACIÓN
+===================================== */
+
+.info{
+
+    display:none;
+
+    position:absolute;
+
+    left:110%;
+
+    top:0;
+
+    width:240px;
+
+    background:#111;
+
+    border:2px solid gold;
+
+    border-radius:15px;
+
+    padding:15px;
+
+    color:white;
+
+    opacity:0;
+
+    transform:translateX(-15px);
+
+    transition:.35s;
+
+}
+
+.info h4{
+
+    color:gold;
+
+    text-align:center;
+
+}
+
+.equipo:hover .info{
+
+    display:block;
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+/* =====================================
+   CAMPEÓN
+===================================== */
+
+.campeon{
+
+    background:linear-gradient(45deg,gold,#ffef8a);
+
+    color:black;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    text-align:center;
+
+    margin-top:30px;
+
+    animation:brillo 2s infinite alternate;
+
+}
+
+/* =====================================
+   ANIMACIONES
+===================================== */
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =====================================
+   SCROLL
+===================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:gold;
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+@keyframes brillo{
+
+from{
+
+box-shadow:0 0 10px gold;
+
+}
+
+to{
+
+box-shadow:0 0 35px gold;
+
+}
+
+}
+/* =====================================
+   FICHAS
+===================================== */
+
+#fichas{
+padding:40px;
+}
+.contenedor-fichas{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+
+}
+.ficha{
+    width:300px;
+    background:linear-gradient(160deg,#1d1d1d,#101010);
+    border:2px solid gold;
+    border-radius:18px;
+    padding:20px;
+    color:white;
+    transition:.4s;
+    overflow:hidden;
+    position:relative;
+    box-shadow:0 0 15px rgba(255,215,0,.15);
+}
+.ficha:hover{
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:0 0 35px gold;
+}
+.ficha h3{
+font-size:28px;
+text-align:center;
+color:gold;
+margin-bottom:20px;
+}
+.ficha p{
+margin:8px 0;
+font-size:15px;
+line-height:1.5;
+}
+.ficha::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:5px;
+background:gold;
+}
+.barra{
+height:10px;
+background:#444;
+border-radius:20px;
+margin:6px 0 15px;
+overflow:hidden;
+}
+.valor{
+height:100%;
+background:linear-gradient(to right,#ffd700,#ff9800);
+}
+.tooltip{
+display:none;
+position:fixed;
+width:300px;
+background:linear-gradient(160deg,#111,#222);
+color:white;
+border:2px solid gold;
+border-radius:15px;
+padding:18px;
+box-shadow:0 0 25px rgba(255,215,0,.45);
+z-index:9999;
+pointer-events:none;
+}
+.tooltip h3{
+text-align:center;
+color:gold;
+margin-bottom:15px;
+}
+.tooltip p{
+margin:6px 0;
+font-size:14px;
+}
+.barra{
+height:8px;
+background:#333;
+border-radius:20px;
+overflow:hidden;
+margin-bottom:12px;
+}
+.valor{
+height:100%;
+background:linear-gradient(to right,gold,orange);
+}
+/* =====================================
+   Estadios
+===================================== */
+#estadios{
+width:90%;
+margin:50px auto;
+}
+.texto-estadios{
+text-align:center;
+margin-bottom:30px;
+font-size:18px;
+}
+.lista-estadios{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:20px;
+}
+.estadio{
+position:relative;
+background:#202020;
+padding:18px;
+border-radius:15px;
+border:2px solid gold;
+text-align:center;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+.estadio:hover{
+transform:translateY(-5px);
+background:#2d2d2d;
+box-shadow:0 0 20px gold;
+}
+.info-estadio{
+display:none;
+position:absolute;
+
+bottom:105%;
+left:50%;
+transform:translateX(-50%);
+
+width:300px;
+background:#111;
+border:2px solid gold;
+border-radius:15px;
+padding:15px;
+
+z-index:1000;
+color:white;
+text-align:left;
+
+box-shadow:0 0 25px black;
+}
+.estadio:hover .info-estadio{
+display:block;
+}
+.info-estadio img{
+width:100%;
+border-radius:10px;
+margin-bottom:12px;
+}
+.info-estadio h3{
+color:gold;
+text-align:center;
+margin-bottom:15px;
+}
+.info-estadio a{
+display:block;
+margin-top:15px;
+text-align:center;
+background:gold;
+color:black;
+padding:10px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+.info-estadio a:hover{
+background:white;
 }
