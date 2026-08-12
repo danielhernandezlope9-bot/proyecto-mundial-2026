@@ -1564,3 +1564,71 @@ section {
     }
 
 }
+/* =====================================
+   MENU RESPONSIVE PARA CELULAR
+===================================== */
+
+@media (max-width: 600px) {
+
+    nav {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: 55px !important;
+
+        display: flex !important;
+        align-items: center !important;
+
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+
+        white-space: nowrap !important;
+
+        padding: 8px 5px !important;
+        box-sizing: border-box !important;
+
+        z-index: 1000;
+    }
+
+    nav ul {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+
+        width: max-content !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        gap: 5px !important;
+    }
+
+    nav li {
+        display: inline-flex !important;
+        flex-shrink: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    nav a {
+        display: block !important;
+
+        font-size: 13px !important;
+
+        padding: 10px 12px !important;
+
+        white-space: nowrap !important;
+
+        margin: 0 !important;
+    }
+
+    /* Ocultar barra de desplazamiento */
+    nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    nav {
+        scrollbar-width: none;
+    }
+
+}
