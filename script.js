@@ -576,3 +576,29 @@ tooltip.style.display="none";
 });
 
 });
+
+
+// ==============================
+// BOTÓN VOLVER ARRIBA
+// ==============================
+
+const btnArriba = document.getElementById("btnArriba");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 500) {
+        btnArriba.classList.add("visible");
+    } else {
+        btnArriba.classList.remove("visible");
+    }
+
+});
+
+btnArriba.addEventListener("click", () => {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});
