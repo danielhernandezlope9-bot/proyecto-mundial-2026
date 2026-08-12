@@ -1565,64 +1565,65 @@ section {
 
 }
 /* =====================================
-   MENU RESPONSIVE PARA CELULAR
+   MENU RESPONSIVE - VERSION FINAL
 ===================================== */
 
 @media (max-width: 600px) {
 
     nav {
-        position: relative !important;
         width: 100% !important;
-        height: auto !important;
+        height: 55px !important;
         min-height: 55px !important;
 
         display: flex !important;
+        flex-direction: row !important;
+
         align-items: center !important;
+        justify-content: flex-start !important;
+
+        gap: 5px !important;
+
+        padding: 5px 8px !important;
+        margin: 0 !important;
+
+        box-sizing: border-box !important;
 
         overflow-x: auto !important;
         overflow-y: hidden !important;
 
         white-space: nowrap !important;
 
-        padding: 8px 5px !important;
-        box-sizing: border-box !important;
+        position: relative !important;
 
-        z-index: 1000;
-    }
-
-    nav ul {
-        display: flex !important;
-        flex-direction: row !important;
-        flex-wrap: nowrap !important;
-
-        width: max-content !important;
-
-        margin: 0 !important;
-        padding: 0 !important;
-
-        gap: 5px !important;
-    }
-
-    nav li {
-        display: inline-flex !important;
-        flex-shrink: 0 !important;
-        margin: 0 !important;
-        padding: 0 !important;
+        z-index: 1000 !important;
     }
 
     nav a {
-        display: block !important;
+        display: inline-flex !important;
 
-        font-size: 13px !important;
+        flex: 0 0 auto !important;
+
+        width: auto !important;
+        min-width: auto !important;
+
+        height: auto !important;
+
+        margin: 0 !important;
 
         padding: 10px 12px !important;
 
+        font-size: 13px !important;
+
+        line-height: normal !important;
+
         white-space: nowrap !important;
 
-        margin: 0 !important;
+        text-align: center !important;
+
+        box-sizing: border-box !important;
     }
 
-    /* Ocultar barra de desplazamiento */
+    /* Ocultar barra horizontal */
     nav::-webkit-scrollbar {
         display: none;
     }
