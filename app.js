@@ -20,11 +20,27 @@ function actualizarContador() {
         (diferencia % (1000 * 60)) / 1000
     );
 
-    document.getElementById("contador").innerHTML =
-        dias + " días " +
-        horas + " horas " +
-        minutos + " minutos " +
-        segundos + " segundos";
+  document.getElementById("contador").innerHTML = `
+    <div class="tiempo">
+        <span>${dias}</span>
+        <small>DÍAS</small>
+    </div>
+
+    <div class="tiempo">
+        <span>${String(horas).padStart(2, "0")}</span>
+        <small>HORAS</small>
+    </div>
+
+    <div class="tiempo">
+        <span>${String(minutos).padStart(2, "0")}</span>
+        <small>MINUTOS</small>
+    </div>
+
+    <div class="tiempo">
+        <span>${String(segundos).padStart(2, "0")}</span>
+        <small>SEGUNDOS</small>
+    </div>
+`;
 }
 
 actualizarContador();
